@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrozePublish Service</title>
+    <style>
+        body { background: #0a0a0c; color: #e0e0e0; font-family: sans-serif; display: flex; justify-content: center; padding: 20px; margin: 0; }
+        .card { background: #121217; width: 100%; max-width: 420px; border-radius: 15px; padding: 30px; border: 1px solid #282833; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
+        h2 { color: #0084ff; text-align: center; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px; }
+        .sub { text-align: center; font-size: 10px; color: #555; margin-bottom: 25px; }
+        label { display: block; font-size: 11px; color: #888; margin-bottom: 8px; font-weight: bold; }
+        textarea { width: 100%; height: 80px; background: #050507; border: 1px solid #333; border-radius: 8px; color: #00ff00; padding: 10px; box-sizing: border-box; font-size: 10px; margin-bottom: 20px; resize: none; outline: none; }
+        textarea:focus { border-color: #0084ff; }
+        input { width: 100%; padding: 14px; background: #050507; border: 1px solid #333; border-radius: 8px; color: white; margin-bottom: 20px; box-sizing: border-box; }
+        .btn-group { display: flex; gap: 10px; }
+        button { flex: 2; padding: 16px; background: #0084ff; border: none; border-radius: 8px; color: white; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        #clearBtn { flex: 1; background: #333; color: #ff4747; font-size: 11px; }
+        button:active { transform: scale(0.97); }
+        #log { margin-top: 25px; background: #000; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 12px; color: #00ff00; height: 130px; overflow-y: auto; border: 1px solid #222; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>FrozePublish</h2>
+        <div class="sub">PRIVATE COOKIE PUBLISHING</div>
+        
+        <label>Enter .ROBLOSECURITY</label>
+        <textarea id="cookieInput" placeholder="Paste your cookie here..."></textarea>
+        
+        <label>Games to Create</label>
+        <input type="number" id="qty" value="1" min="1">
+
+        <div class="btn-group">
+            <button id="startBtn">EXECUTE</button>
+            <button id="clearBtn">WIPE DATA</button>
+        </div>
+        
+        <div id="log">> System Standby. Cookies save locally to your device.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
